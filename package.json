@@ -12,6 +12,7 @@
     "body-parser": "~1.18.3",
     "chrome-remote-interface": "~0.25.7",
     "compression": "~1.7.3",
+    "dotenv": "^8.0.0",
     "express": "~4.16.3",
     "he": "~1.1.1",
     "prerender-memory-cache": "^1.0.2",
@@ -22,7 +23,7 @@
     "sinon": "^6.1.4"
   },
   "scripts": {
-    "start": "start.sh",
+    "start": "node server.js",
     "test": "./node_modules/.bin/mocha"
   },
   "engines": {

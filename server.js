@@ -1,9 +1,9 @@
 #!/usr/bin/env node
+var dotenv = require("dotenv");
 var prerender = require('./lib');
 
-var server = prerender({
-    waitAfterLastRequest: 2000
-});
+dotenv.config();
+var server = prerender();
 
 server.use(require('prerender-memory-cache'));
 server.use(prerender.sendPrerenderHeader());
